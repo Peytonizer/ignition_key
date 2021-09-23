@@ -33,7 +33,7 @@ BLUE "Updating repositories..."
 sudo apt update
 
 BLUE "Getting Java JDK..."
-sudo apt install default-jdk
+sudo apt install -y default-jdk
 
 BLUE "Installing git..."
 sudo apt install -y git
@@ -44,9 +44,9 @@ unzip ghidra.zip
 rm ghidra.zip
 
 BLUE "Downloading gdb-peda..."
-git clone https://github.com/longld/peda.git ~/peda
-echo "source ~/peda/peda.py" >> ~/.gdbinit
-echo "DONE! debug your program with gdb and enjoy"
+sudo git clone https://github.com/longld/peda.git ~/peda
+sudo echo "source ~/peda/peda.py" >> ~/.gdbinit
+sudo echo "DONE"
 
 
 BLUE "Installing Sublime Text..." # according to https://www.sublimetext.com/docs/3/linux_repositories.html-
@@ -58,9 +58,6 @@ sudo apt-get install -y sublime-text
 
 BLUE "Installing terminator..."
 sudo apt install -y terminator
-
-BLUE "Setting terminator as the default terminal emulator..."
-sed -i s/Exec=gnome-terminal/Exec=terminator/g /usr/share/applications/gnome-terminal.desktop
 
 BLUE "Installing task..."
 sudo apt-get install -y taskwarrior
