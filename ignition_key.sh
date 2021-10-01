@@ -56,11 +56,11 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install -y sublime-text
 
-BLUE "Installing terminator..."
-sudo apt install -y terminator
+BLUE "Installing NodeJS..."
+sudo apt-get install nodejs -y
 
-BLUE "Installing task..."
-sudo apt-get install -y taskwarrior
+BLUE "Installing ..."
+sudo apt-get install jsbeautify -y
 
 BLUE "Installing pip..."
 sudo apt-get install -y python-pip
