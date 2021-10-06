@@ -53,7 +53,7 @@ BLUE "Installing Sublime Text..." # according to https://www.sublimetext.com/doc
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
+sudo apt update
 sudo apt-get install -y sublime-text
 
 BLUE "Installing NodeJS..."
@@ -76,12 +76,12 @@ BLUE "Installing exiftool..."
 sudo apt install -y exiftool
 
 BLUE "Installing python3-pip..."
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 sudo python3 -m pip install --upgrade pip
 
 
 BLUE "Installing Python pwntools..."
-sudo python3 -m pip install pwntools
+sudo python3 -m pip install pwntools -y
 
 
 
