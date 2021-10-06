@@ -72,8 +72,8 @@ sudo apt-get install strace -y
 BLUE "Installing terminator..."
 sudo apt install terminator -y
 
-BLUE "Removing boilerplate home directories..."
-rmdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+#BLUE "Removing boilerplate home directories..."
+#rmdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 BLUE "Installing exiftool..."
 sudo apt install -y exiftool
