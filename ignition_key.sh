@@ -63,7 +63,7 @@ BLUE "Installing NodeJS..."
 sudo apt-get install nodejs -y
 
 BLUE "Installing js-beautify..."
-sudo apt-get install jsbeautify -y
+sudo apt-get install jsbeautifier -y
 
 BLUE "Installing strace..."
 sudo apt-get install strace -y
@@ -84,7 +84,7 @@ sudo python3 -m pip install --upgrade pip
 
 
 BLUE "Installing Python pwntools..."
-sudo python3 -m pip install pwntools -y
+sudo python3 -m pip install pwntools
 
 
 
