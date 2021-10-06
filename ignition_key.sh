@@ -51,7 +51,7 @@ sudo echo "DONE"
 
 BLUE "Installing Sublime Text..." # according to https://www.sublimetext.com/docs/3/linux_repositories.html-
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-get install -y apt-transport-https
+sudo apt install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
 sudo apt-get install -y sublime-text
@@ -59,20 +59,29 @@ sudo apt-get install -y sublime-text
 BLUE "Installing NodeJS..."
 sudo apt-get install nodejs -y
 
-BLUE "Installing ..."
+BLUE "Installing js-beautify..."
 sudo apt-get install jsbeautify -y
 
-BLUE "Installing pip..."
-sudo apt-get install -y python-pip
+BLUE "Installing strace..."
+sudo apt-get install strace -y
+
+
+BLUE "Installing terminator..."
+sudo apt install terminator -y
 
 BLUE "Removing boilerplate home directories..."
 rmdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 BLUE "Installing exiftool..."
-sudo apt-get install -y exiftool
+sudo apt install -y exiftool
+
+BLUE "Installing python3-pip..."
+sudo apt install python3-pip
+sudo python3 -m pip install --upgrade pip
+
 
 BLUE "Installing Python pwntools..."
-sudo pip install pwntools
+sudo python3 -m pip install pwntools
 
 
 
