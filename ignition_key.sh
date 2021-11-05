@@ -93,5 +93,8 @@ sudo python3 -m pip install --upgrade pip
 BLUE "Installing Python pwntools..."
 sudo python3 -m pip install pwntools
 
+BLUE "Installing SecLists..."
+sudo apt -y install seclists
+
 
 
