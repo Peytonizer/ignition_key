@@ -96,5 +96,8 @@ sudo python3 -m pip install pwntools
 BLUE "Installing SecLists..."
 sudo apt -y install seclists
 
+BLUE "Installing GoBuster..."
+sudo apt -y install gobuster
+
 
 
