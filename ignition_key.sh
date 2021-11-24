@@ -99,5 +99,7 @@ sudo apt -y install seclists
 BLUE "Installing GoBuster..."
 sudo apt -y install gobuster
 
-
+BLUE "Getting peas"
+mkdir ~/scripts
+sudo git clone https://github.com/carlospolop/PEASS-ng
 
