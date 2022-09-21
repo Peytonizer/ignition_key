@@ -46,12 +46,6 @@ wget -O ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/dow
 unzip ghidra.zip
 rm ghidra.zip
 
-BLUE "Downloading and installing NordVPN..."
-wget -O nord.deb https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-sudo apt install ~/nord.deb
-sudo apt update
-sudo apt install nordvpn
-
 
 BLUE "Downloading gdb-peda..."
 sudo git clone https://github.com/longld/peda.git ~/peda
